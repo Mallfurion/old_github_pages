@@ -14,11 +14,8 @@ $(function () {
 		var startWeek = 40;
 		var today = new Date();
 		var weekno = today.getWeek();
-		weekno = weekno - startWeek + 1;
+		weekno = weekno - startWeek + 2;
 		$('.current-week').html("Week number: <b>" + weekno + "</b>.");
-		if (weekno % 2 == 0) {
-			$('.sapt1').css('display', 'none');
-		}
 		var day = today.getDay();
 		switch (day) {
 			case 1:
@@ -32,6 +29,9 @@ $(function () {
 				break;
 			case 4:
 				$('.joi').attr('style', 'color: red !important').css('font-weight', 'bold');
+		}
+		if (weekno % 2 == 0) {
+			$('.sapt1').css('display', 'none');
 		}
 		$('#accordion').accordion({ collapsible: true, active: 'none' });
 	});
