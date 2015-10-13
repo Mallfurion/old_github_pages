@@ -14,7 +14,7 @@ $(function () {
 		var startWeek = 40;
 		var today = new Date();
 		var weekno = today.getWeek();
-		weekno = weekno - startWeek + 2;
+		weekno = weekno - startWeek + 1;
 		$('.current-week').html("Week number: <b>" + weekno + "</b>.");
 		var day = today.getDay();
 		switch (day) {
