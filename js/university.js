@@ -89,7 +89,6 @@ function timeToString(time) {
 }
 
 $(document).ready(function () {
-	
 	//start learning
 	$('#learning-start').click(function () {
 		watchTime.setHours(0);
@@ -108,7 +107,6 @@ $(document).ready(function () {
 		$('#learning-start').attr('disabled', false).css('display', 'inline-block');
 		$('#break-stop').css('display', 'none');
 		$('#break-start').css('display', 'inline-block').attr('disabled', true);
-
 		window.clearInterval(interval);
 		$('#breaks').empty();
 		$('#breaks').append("<p>Total learning time - " + $('#learning-clock').text() + "</p>");
