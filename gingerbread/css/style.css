@@ -1,5 +1,53 @@
-p { text-align:center; font-style:italic; margin:1em; }
-path { fill:#a30; stroke:#ccc; stroke-width:1 }
-#duplicate path { pointer-events:none; stroke:#f60; fill:none; }
-#graphics { width:600px; height:600px; margin:1em auto; position:relative; }
-#graphics * { position:absolute; top:0; left:0; width:600px; height:600px }
+p {
+    text-align:center;
+    font-style:italic;
+    margin:1em;
+}
+
+path {
+    fill:#a30;
+    stroke:#ccc;
+    stroke-width:1;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 72px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    line-height: 600px;
+}
+
+#merry {
+    margin-left: 100px;
+    display: none;
+}
+
+#christmas {
+    right: 25px;
+    display: none;
+}
+
+#duplicate path {
+    pointer-events:none;
+    stroke:#f60;
+    fill:none;
+}
+
+#graphics {
+    width:600px;
+    height:600px;
+    margin:1em auto;
+    position:relative;
+    cursor: url('http://www.picgifs.com/cursors/special-days/christmas/animaatjes_christmas_icon21.gif'), pointer;
+}
+
+#graphics * {
+    position:absolute;
+    top:0;
+    left:0;
+    width:600px;
+    height:600px;
+}
