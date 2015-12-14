@@ -39,34 +39,21 @@ function paintMiddle(){
     document.getElementById('center-path-bowtie').style.fill = 'green';
     document.getElementById('center-path-buttons').style.fill = 'red';
     document.getElementById('center-path-glaze').style.fill = 'white';
-<<<<<<< HEAD
     //showText
     $('#merry').show('slide', 500);
     $('#christmas').show('slide', {direction: 'right'}, 500);
-=======
-
-
->>>>>>> 5efadfed5e37039bf50865a1574d257cdd1191e8
 }
 
 function clearCanvas(){
     ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
 }
 
-<<<<<<< HEAD
 function clearMiddle() {
-=======
-
-function stopDrawingPath(){
-    clearInterval(timer);
-    clearCanvas();
->>>>>>> 5efadfed5e37039bf50865a1574d257cdd1191e8
     document.getElementById('center-path-eyes').style.fill = '#a30';
     document.getElementById('center-path-mouth').style.fill = '#a30';
     document.getElementById('center-path-bowtie').style.fill = '#a30';
     document.getElementById('center-path-buttons').style.fill = '#a30';
     document.getElementById('center-path-glaze').style.fill = '#a30';
-<<<<<<< HEAD
     $('#merry').hide('slide', 500);
     $('#christmas').hide('slide', {direction: 'right'}, 500);
 }
@@ -77,6 +64,3 @@ function stopDrawingPath(){
     clearCanvas();
     clearMiddle();
 }
-=======
-}
->>>>>>> 5efadfed5e37039bf50865a1574d257cdd1191e8
