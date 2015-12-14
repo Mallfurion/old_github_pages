@@ -1,0 +1,48 @@
+<html>
+<head>
+	<link rel='stylesheet' href='css/jquery-ui.css'>
+	<link rel='stylesheet' href='css/bootstrap.css'>
+	<link rel='stylesheet' href='css/university.css'>
+	<script src='js/jquery.js'></script>
+	<script src='js/jquery-ui.js'></script>
+	<script src='js/university.js'></script>
+	<title>JavaScript Playground</title>
+</head>
+
+<body class="unselectable">
+	<div class="bg-primary" id="top">
+		<h2>Welcome, master!</h2>
+	</div>
+	<div id="accordion" class="container-fluid">
+		<h3>Learning Tracker</h3>
+		<div class="row">
+			<div id="learning" class="col-md-6">
+				<div id="learning-start-stop">
+					<button class="btn btn-primary" id="learning-start">Start Learning</button>
+					<button class="btn btn-danger" id="learning-stop" disabled=true>Stop Learning</button>
+				</div>
+				<p id="learning-clock">00:00:00</p>
+				<div id="learning-break">
+					<button class="btn btn-warning" id="break-start" disabled=true>Take break</button>
+					<button class="btn btn-success" id="break-stop" disabled=true>I'm back!</button>
+				</div>
+
+			</div>
+			<div id="breaks" class="col-md-6">
+				<p style="font-weight: bold; font-size: 16px;">Breaks</p>
+			</div>
+		</div>
+		<h3>University Schedule</h3>
+		<div>
+			<h4 style="margin-bottom:20px;margin-top:10px;">Software Engineering - Year II | Group 258</h4>
+			<div id="schedule"></div>
+		</div>
+	</div>
+	<div id="gingerbread">
+		<a href="../gingerbread"><button class="btn" id="gingerbread-button">Merry Christmas!</button></a>
+	</div>
+
+	<div class="current-week"></div>
+</body>
+
+</html>
