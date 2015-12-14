@@ -1,4 +1,32 @@
-html {
-
+p { 
+  text-align:center; 
+  font-style:italic;
+  margin:1em; 
 }
 
+path { 
+  fill:#a30; 
+  stroke:#ccc; 
+  stroke-width:1;
+}
+
+#duplicate path { 
+  pointer-events:none; 
+  stroke:#f60; 
+  fill:none;
+}
+
+#graphics { 
+  width:600px; 
+  height:600px; 
+  margin:1em auto; 
+  position:relative; 
+}
+
+#graphics * { 
+  position:absolute; 
+  top:0; 
+  left:0; 
+  width:600px; 
+  height:600px; 
+}
