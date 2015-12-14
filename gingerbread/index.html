@@ -2,10 +2,10 @@
 <head>
     <link rel="stylesheet" href="css/style.css" />
 </head>
-<body bgcolor="#2f4f4f">
+<body bgcolor="#2f4f4f" class="unselectable">
 <div id="graphics">
-    <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600">
-        <path id="Selection"
+    <svg width="600" height="600">
+        <path id="selection"
           d="M 382.41,165.00
            C 386.45,152.39 386.02,146.78 386.00,134.00
              385.98,121.74 379.53,102.63 372.95,92.29
@@ -224,12 +224,20 @@
         <g id="duplicate"></g>
     </svg>
     <canvas width="600" height="600"></canvas>
-    </div>
-    <h1 id="merry">Merry</h1>
-    <h1 id="christmas">Christmas!</h1>
+</div>
+<a id="saved-anchor" href="#saved-text"></a>
+<p id="saved-text"></p>
+<img id="saved-img">
+
+    <h1 class="pulsate-text" id="merry">Merry</h1>
+    <h1 class="pulsate-text" id="christmas">Christmas!</h1>
+
+
+
 
 <!-- JavaScript Load -->
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/html2canvas.min.js"></script>
     <script src="js/app.js"></script>
 </body>

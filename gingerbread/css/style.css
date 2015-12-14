@@ -2,12 +2,18 @@ p {
     text-align:center;
     font-style:italic;
     margin:1em;
+    color: white;
+}
+
+body {
+    text-align: center;
 }
 
 path {
     fill:#a30;
     stroke:#ccc;
     stroke-width:1;
+    background-color: #a30;
 }
 
 h1 {
@@ -15,9 +21,18 @@ h1 {
     text-align: center;
     font-size: 72px;
     display: inline-block;
-    position: absolute;
+    position: fixed;
     top: 10px;
     line-height: 600px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #merry {
@@ -33,13 +48,24 @@ h1 {
 #duplicate path {
     pointer-events:none;
     stroke:#f60;
-    fill:none;
+    fill: #a30;
+}
+
+#saved-text {
+    margin-top:-40px;
+    padding-top:20px;
+}
+
+#saved-img {
+    margin:1em auto;
+    position:relative;
 }
 
 #graphics {
+    color: #a30;
     width:600px;
     height:600px;
-    margin:1em auto;
+    margin:0 auto;
     position:relative;
     cursor: url('http://www.picgifs.com/cursors/special-days/christmas/animaatjes_christmas_icon21.gif'), pointer;
 }
@@ -50,4 +76,33 @@ h1 {
     left:0;
     width:600px;
     height:600px;
+}
+
+.pulsate-text {
+    -webkit-animation: color_change 1s infinite alternate;
+    -moz-animation: color_change 1s infinite alternate;
+    -ms-animation: color_change 1s infinite alternate;
+    -o-animation: color_change 1s infinite alternate;
+    animation: color_change 1s infinite alternate;
+}
+
+@-webkit-keyframes color_change {
+    from { color: red; }
+    to { color: white; }
+}
+@-moz-keyframes color_change {
+    from { color: red; }
+    to { color: white; }
+}
+@-ms-keyframes color_change {
+    from { color: red; }
+    to { color: white; }
+}
+@-o-keyframes color_change {
+    from { color: red; }
+    to { color: white; }
+}
+@keyframes color_change {
+    from { color: red; }
+    to { color: white; }
 }
