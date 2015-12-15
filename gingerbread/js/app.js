@@ -30,7 +30,7 @@ function startDrawingPath(){
     ctx.lineWidth = 15;
     ctx.strokeStyle = 'white';
     timer = setInterval(buildPath,1000/drawFPS);
-    timer2 = setTimeout(paintMiddle, 3200);
+    timer2 = setTimeout(paintMiddle, 3600); //recommended time - double total orig length
 
 }
 
