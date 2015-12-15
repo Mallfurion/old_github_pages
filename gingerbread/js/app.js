@@ -19,7 +19,7 @@ $(function() {
 
 var orig = document.querySelector('path'), points, timer, timer2, timer3, done,
     canvas = document.querySelector('canvas'),
-    ctx=canvas.getContext('2d', {alpha: true});
+    ctx=canvas.getContext('2d');
 
 canvas.addEventListener('mouseover',startDrawingPath,false);
 canvas.addEventListener('mouseout', stopDrawingPath, false);
@@ -47,7 +47,8 @@ function redrawCanvas(){
     clearCanvas();
     ctx.beginPath();
     ctx.moveTo(points[0].x,points[0].y);
-    for (var i=1;i<points.length;i++) ctx.lineTo(points[i].x,points[i].y);
+    for (var i=1;i<points.length;i++)
+        ctx.lineTo(points[i].x,points[i].y);
     ctx.stroke();
 }
 
@@ -82,7 +83,7 @@ function clearMiddle() {
 function generateImage() {
     html2canvas(document.getElementById('graphics'), {
         onrendered: function(canvas) {
-            var img = canvas.toDataURL('image/jpg');
+            var img = canvas.toDataURL('image/png');
             $('#saved-img').attr('src', img);
         }
     });
