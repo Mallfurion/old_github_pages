@@ -16,6 +16,10 @@ $(function() {
         }
     });
 });
+//end-slow-scroll
+$('#graphics').bind('contextmenu', function(e){
+    return false;
+});
 
 var orig = document.querySelector('path'), points, timer, timer2, timer3, done,
     canvas = document.querySelector('canvas'),

@@ -2,8 +2,8 @@
 <html>
 <head>
     <style type="text/css">
-        html, body { height: 100%; margin: 0; padding: 0; }
-        #map { height: 100%; }
+        html, body { height: 100%; margin: 0; padding: 0; text-align: center; }
+        #map { height: 100%; width:70%; margin: 0 auto; }
     </style>
 </head>
 <body>
@@ -13,14 +13,30 @@
     var map;
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 8
+            center: {lat: 46.766667, lng: 23.583333},
+            zoom: 14
         });
+        var drawingManager = new google.maps.drawing.DrawingManager({
+            drawingControl: true,
+            markerOptions: {icon: 'images/beachflag.png'},
+            circleOptions: {
+                fillColor: '#ffff00',
+                fillOpacity: 1,
+                strokeWeight: 5,
+                clickable: false,
+                editable: true,
+                zIndex: 1
+            }
+        });
+        drawingManager.setMap(map);
+
     }
+
+
 
 </script>
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6VROhPVorh2cyTumWpBm0dFqWOoxF1d0&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6VROhPVorh2cyTumWpBm0dFqWOoxF1d0&libraries=drawing,places&callback=initMap">
 </script>
 </body>
 </html>
