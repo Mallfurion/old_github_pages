@@ -13,11 +13,12 @@ $(function () {
 	$('#schedule').load('schedule.html', function () {
 		var startWeek = 40;
 		var startYear = 2015;
+		var winterBreakWeeks = 2;
 		var today = new Date();
 		var weekno = today.getWeek();
 		if(today.getYear() != startYear)
 		{
-			weekno = weekno + 13;
+			weekno = weekno + 13 - weekBreakWeeks;
 		}
 		else
 		{
