@@ -18,7 +18,7 @@ $(function () {
 		var weekno = today.getWeek();
 		if(today.getYear() != startYear)
 		{
-			weekno = weekno + 13 - weekBreakWeeks;
+			weekno = weekno + 13 - winterBreakWeeks;
 		}
 		else
 		{
