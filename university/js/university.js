@@ -12,9 +12,17 @@ Date.prototype.getWeek = function () {
 $(function () {
 	$('#schedule').load('schedule.html', function () {
 		var startWeek = 40;
+		var startYear = 2015;
 		var today = new Date();
 		var weekno = today.getWeek();
-		weekno = weekno - startWeek + 1;
+		if(today.getYear() != startYear)
+		{
+			weekno = weekno + 13;
+		}
+		else
+		{
+			weekno = weekno - startWeek + 1;
+		}
 		$('.current-week').html("Week number: <b>" + weekno + "</b>.");
 		var day = today.getDay();
 		switch (day) {
